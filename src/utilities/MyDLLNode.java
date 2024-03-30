@@ -27,6 +27,10 @@ public class MyDLLNode<E> implements Serializable
 	public MyDLLNode<E> getNext() {
 		return next;
 	}
+	
+	public E getElement(E elem) {
+		return elem;
+	}
 
 	public void setPrev(MyDLLNode<E> prev) {
 		this.prev = prev;
@@ -34,6 +38,11 @@ public class MyDLLNode<E> implements Serializable
 	
 	public void setNext(MyDLLNode<E> next) {
 		this.next = next;
+	}
+
+	public void setElement(E toChange) {
+		this.element = toChange;
+		
 	}
 	
 	
